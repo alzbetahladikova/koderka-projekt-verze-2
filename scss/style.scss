@@ -48,7 +48,7 @@ h1 {
     font-family: $font-primary;
     font-size: $fSize-large;
     text-align: left;
-   
+
 }
 
 h2 {
@@ -126,6 +126,7 @@ li {
     position: absolute;
     left: -99999999px;
 }
+
 /*
 .menu__list {
     li {
@@ -214,6 +215,10 @@ li {
     max-width: 200px;
     display: block;
     margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 
 }
 
@@ -221,7 +226,10 @@ li {
     text-align: center;
     background-color: rgb(252, 186, 4);
     padding-top: 3em;
-    h1 {text-align: center;}
+
+    h1 {
+        text-align: center;
+    }
 }
 
 .frame {
@@ -274,7 +282,7 @@ li {
 }
 
 [class*=media] {
-    background-color: gray;
+    background-color: lightgray;
     text-align: center;
 }
 
