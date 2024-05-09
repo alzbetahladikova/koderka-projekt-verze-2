@@ -18,17 +18,15 @@ $fSize-big: 1.4rem;
 $fSize-bigger: 1.6rem;
 $fSize-large: 2rem;
 $fSize-small: 0.9rem;
-
 $cWarning: #ff0000;
 $cFont-base: #021934;
-$cLight: #F8F6E3;
-$cGradient: radial-gradient(circle, rgba(151, 231, 225, 1) 0%, rgba(106, 212, 221, 1) 57%, rgba(122, 162, 227, 1) 87%);
-;
 $spacer: 1em;
 $footer-height: 100px;
-$shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-
+$cPrimary:rgb(252, 186, 4);
+$cSecondary:lightgray;
+$cSecondaryDark:grey;
+$cLight:rgb(255, 255, 255);
+$shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
 
 body {
@@ -38,17 +36,12 @@ body {
     font-size: $fSize-base ;
     color: $cFont-base;
     margin: 0;
-
-
 }
-
-
 
 h1 {
     font-family: $font-primary;
     font-size: $fSize-large;
     text-align: left;
-
 }
 
 h2 {
@@ -62,7 +55,6 @@ h3 {
     font-size: $fSize-big;
     text-align: left;
 }
-
 
 p,
 a {
@@ -89,7 +81,7 @@ th {
 
 th[colspan="2"],
 td[colspan="2"] {
-    background-color: lightgray;
+    background-color: $cSecondary;
 }
 
 ul,
@@ -105,15 +97,11 @@ li {
     &--warning {
         color: $cWarning;
     }
-
     &--brutal {
         color: transparent;
         cursor: pointer;
     }
-
 }
-
-
 
 .origin__text,
 .origin__link {
@@ -144,21 +132,19 @@ li {
     font-size: $fSize-large;
     display: block;
     padding: 10px;
-    background-color: rgb(252, 186, 4);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: $cPrimary;
+    box-shadow:$shadow;
     height: 2em;
 }
 
 .menu__toggler:hover {
-    background-color: gray;
+    background-color: $cSecondaryDark;
 }
 
 .submenu__toggler {
     cursor: pointer;
     display: block;
-
 }
-
 
 .menu__list,
 .submenu__list {
@@ -167,9 +153,7 @@ li {
     padding: 0;
     list-style: none;
     text-align: left;
-    background-color: white;
-
-
+    background-color: $cLight;
 }
 
 .menu__link,
@@ -191,7 +175,7 @@ li {
 .submenu__link:hover,
 .submenu__toggler:hover {
     font-weight: 700;
-    background-color: lightgray;
+    background-color:  $cSecondary;
 
 }
 
@@ -224,7 +208,7 @@ li {
 
 .news {
     text-align: center;
-    background-color: rgb(252, 186, 4);
+    background-color: $cPrimary;
     padding-top: 3em;
 
     h1 {
@@ -250,39 +234,34 @@ li {
     padding: $spacer;
     font-family: $font-primary;
     font-size: $fSize-small;
-    background-color: white;
+    background-color: $cLight;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin-top: auto;
     height: $footer-height;
-
     a {
         color: $cFont-base;
         font-family: $font-primary;
         padding: 5px;
-
     }
 }
-
 
 .footer__left {
     flex: 2;
     padding: 8px;
-
 }
 
 
 .footer__right {
     flex: 1;
-
     padding: 8px;
     flex-shrink: 0;
     align-items: center;
 }
 
 [class*=media] {
-    background-color: lightgray;
+    background-color: $cSecondary;
     text-align: center;
 }
 
