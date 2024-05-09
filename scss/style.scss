@@ -202,7 +202,7 @@ li {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    max-width: 150px;
 
 }
 
@@ -283,6 +283,8 @@ section {
 .menu {
     z-index: 1;
 }
+
+
     .slideshow {
               will-change: transform;
               background-color: $cPrimary;
@@ -302,8 +304,7 @@ section {
         padding: 0;
         margin: 0; 
       }
-      
-
+     
 
 
     .menu__toggler {
@@ -322,8 +323,26 @@ section {
         display: flex;
            }
   
+.content__image{
+        max-width: 600px;
+        max-height: 600px;
+    }
 
+
+    .frame {
+        width: 560px;
+        height: 315px;
+        padding: $spacer;
+ 
+     }
+
+     [class*=content] {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
 
 /*
 
