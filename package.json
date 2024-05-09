@@ -1,0 +1,16 @@
+{
+  "name": "koderka-projekt",
+  "version": "1.0.0",
+  "description": "Závěrečný projekt pro kurz Staň se kóderkou od Czechitas.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Hladíková",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
