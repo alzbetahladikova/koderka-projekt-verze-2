@@ -164,7 +164,7 @@ li {
     padding: $spacer;
     text-decoration: none;
     color: $cFont-base;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .submenu__link {
@@ -175,7 +175,7 @@ li {
 .menu__link:hover,
 .submenu__link:hover,
 .submenu__toggler:hover {
-    font-weight: 700;
+   
     background-color: $cSecondary;
 
 }
@@ -330,7 +330,9 @@ section {
     .submenu__link,
     .submenu__toggler {
         display: flex;
+       
     }
+ 
 
     .content__image {
         max-width: 600px;
