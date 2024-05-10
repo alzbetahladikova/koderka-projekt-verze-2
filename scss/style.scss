@@ -175,7 +175,7 @@ li {
 .menu__link:hover,
 .submenu__link:hover,
 .submenu__toggler:hover {
-   
+
     background-color: $cSecondary;
 
 }
@@ -290,6 +290,7 @@ section {
     .menu {
         z-index: 1;
         height: 70px;
+        background-color: $cPrimary;
     }
 
 
@@ -319,10 +320,14 @@ section {
         display: none;
     }
 
+    .menu__link,
+    .submenu__toggler {
+        background-color: $cPrimary;
+    }
+
     .menu__list {
         display: flex;
-
-        background-color: $cPrimary;
+        background-color: transparent;
         box-shadow: $shadow;
     }
 
@@ -330,9 +335,11 @@ section {
     .submenu__link,
     .submenu__toggler {
         display: flex;
-       
+
     }
- 
+
+
+
 
     .content__image {
         max-width: 600px;

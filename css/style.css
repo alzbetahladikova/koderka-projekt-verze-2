@@ -250,6 +250,7 @@ section a {
   .menu {
     z-index: 1;
     height: 70px;
+    background-color: rgb(252, 186, 4);
   }
   .slideshow {
     will-change: transform;
@@ -272,9 +273,13 @@ section a {
   .menu__toggler {
     display: none;
   }
+  .menu__link,
+  .submenu__toggler {
+    background-color: rgb(252, 186, 4);
+  }
   .menu__list {
     display: flex;
-    background-color: rgb(252, 186, 4);
+    background-color: transparent;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
   .menu__link,
