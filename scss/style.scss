@@ -291,6 +291,7 @@ section {
         z-index: 1;
         height: 70px;
         background-color: $cPrimary;
+        box-shadow: $shadow;
     }
 
 
@@ -328,7 +329,7 @@ section {
     .menu__list {
         display: flex;
         background-color: transparent;
-        box-shadow: $shadow;
+        
     }
 
     .menu__link,
