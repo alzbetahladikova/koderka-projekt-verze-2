@@ -289,13 +289,14 @@ section {
 
     .menu {
         z-index: 1;
+        height: 70px;
     }
 
 
     .slideshow {
         will-change: transform;
         background-color: $cPrimary;
-        margin-top: 3;
+        margin-top: 3em;
     }
 
     .slideshow iframe {

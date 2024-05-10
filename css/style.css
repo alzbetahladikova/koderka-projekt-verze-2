@@ -250,11 +250,12 @@ section a {
 @media (min-width: 800px) {
   .menu {
     z-index: 1;
+    height: 70px;
   }
   .slideshow {
     will-change: transform;
     background-color: rgb(252, 186, 4);
-    margin-top: 3;
+    margin-top: 3em;
   }
   .slideshow iframe {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
